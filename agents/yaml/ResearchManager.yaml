@@ -1,0 +1,28 @@
+allow_delegation: true
+backstory: An experienced content strategist with a deep understanding of AI technologies.
+cache: true
+code_execution_config: null
+config:
+  description: Research and Content Manager
+  name: ResearchManager
+created_at: null
+function_calling_llm: null
+goal: Ensure high-quality, up-to-date content on AI tools, news, trends, and reviews
+id: null
+is_termination_msg: null
+llm: null
+max_execution_time: null
+max_iter: 25
+max_rpm: null
+models: null
+name: ResearchManager
+new_description: null
+role: Oversee content creation and research processes
+step_callback: null
+timestamp: null
+tools: {}
+type: null
+updated_at: '2024-07-25T04:27:07.922099'
+user_id: null
+verbose: false
+workflows: null

@@ -1,0 +1,19 @@
+code: "# Agent filename: ceo.py\nimport requests\n\nclass CEO:\n    \"\"\"\n    The\
+  \ Chief Executive Officer (CEO) agent.\n    An agent that fetches and returns the\
+  \ CEO of a given company.\n    Methods:\n    get_ceo(company_name): Fetches and\
+  \ returns the CEO of the given company.\n    \"\"\"\n    def __init__(self, api_key):\n\
+  \        \"\"\"\n        Initializes the CEO agent with the given API key.\n   \
+  \     Parameters:\n        api_key (str): The API key to be used for making requests.\n\
+  \        \"\"\"\n        self.api_key = api_key\n    \n    def get_ceo(self, company_name):\n\
+  \        \"\"\"\n        Fetches and returns the CEO of the given company.\n   \
+  \     Parameters:\n        company_name (str): The name of the company.\n      \
+  \  Returns:\n        str: The name of the CEO.\n        \"\"\"\n        url = f\"\
+  https://api.example.com/companies/{company_name}/ceo\"\n        headers = {\"Authorization\"\
+  : f\"Bearer {self.api_key}\"}\n        response = requests.get(url, headers=headers)\n\
+  \        if response.status_code == 200:\n            return response.json()[\"\
+  name\"]\n        else:\n            return None\n\n# Example usage:\n# ceo_agent\
+  \ = CEO(\"your_api_key\")\n# print(ceo_agent.get_ceo(\"Apple\"))"
+config:
+  name: ceo
+name: ceo
+skills: []
